@@ -9,4 +9,7 @@ const anirudhSchema = new mongoose.Schema ({
         type: String,
         required:true
     },
-})
+});
+
+const Anirudh = mongoose.model("Anirudh", anirudhSchema);
+export default Anirudh;

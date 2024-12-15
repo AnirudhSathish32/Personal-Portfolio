@@ -2,16 +2,18 @@ import mongoose from "mongoose";
 
 const projectSchema = new mongoose.Schema ({
     name: {
-        type:String,
+        type: String,
         required: true
     },
     description: {
         type: String,
-        required:true
+        required: true
     },
-    technologies:
-        [{type: String}],
-
+    technologies: {
+        type: Array,
+        required: true
     }
+});
 
-)
+const Product = mongoose.model("Project", projectSchema);
+export default Project;
