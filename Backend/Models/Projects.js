@@ -7,8 +7,11 @@ const projectSchema = new mongoose.Schema ({
     },
     description: {
         type: String,
+        required:true
     },
-    technologies: [{type: String}],
+    technologies:
+        [{type: String}],
+
     }
 
 )
