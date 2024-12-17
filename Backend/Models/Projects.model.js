@@ -10,10 +10,10 @@ const projectSchema = new mongoose.Schema ({
         required: true
     },
     technologies: {
-        type: Array,
+        type: String,
         required: true
     }
 });
 
-const Product = mongoose.model("Project", projectSchema);
+const Project = mongoose.model("Project", projectSchema);
 export default Project;
