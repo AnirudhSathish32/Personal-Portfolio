@@ -11,5 +11,5 @@ const anirudhSchema = new mongoose.Schema ({
     },
 });
 
-const Anirudh = mongoose.model("Anirudh", anirudhSchema);
+const Anirudh = mongoose.model("Anirudh", anirudhSchema, "anirudh");
 export default Anirudh;
