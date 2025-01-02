@@ -12,15 +12,16 @@ function App() {
   return (
     <>
       <div>
-          <Navbar>
-              navbar
-          </Navbar>
+          <Navbar></Navbar>
           <OpeningScreen>
-              opening screen
+              <a href="https://vite.dev" target="_blank">
+                  <img src={githubLogo} className="logo" alt="Linkedin logo" />
+              </a>
+              <a href="https://react.dev" target="_blank">
+                  <img src={linkedinLogo} className="logo react" alt="Github logo" />
+              </a>
           </OpeningScreen>
-          <AboutMe>
-              about me
-          </AboutMe>
+          <AboutMe></AboutMe>
         <a href="https://vite.dev" target="_blank">
           <img src={githubLogo} className="logo" alt="Linkedin logo" />
         </a>
