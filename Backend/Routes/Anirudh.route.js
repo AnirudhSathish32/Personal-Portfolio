@@ -13,8 +13,6 @@ router.get("/", async (req,res) => {
         res.status(500).json({success:false, message:"Server Error"});
     }
 });
-
-
 router.post("/", async (req, res) => {
     const anirudhInformation = req.body;
 
