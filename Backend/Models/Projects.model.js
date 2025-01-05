@@ -10,7 +10,7 @@ const projectSchema = new mongoose.Schema ({
         required: true
     },
     technologies: {
-        type: String,
+        type: Array,
         required: true
     }
 });
