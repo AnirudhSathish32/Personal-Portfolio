@@ -23,7 +23,6 @@ const AboutMe: React.FC = () => {
                 console.error("Error fetching records:", error);
             }
         };
-
         fetchData();
     }, []);
 

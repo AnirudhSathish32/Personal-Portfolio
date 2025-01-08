@@ -79,8 +79,8 @@ button:hover {
                0 0 40px rgba(0, 123, 255, 0.8);
 }
 .radial-gradient {
-  filter: blur(10px);
-  background: radial-gradient(circle 300px at center, #d3d3d3, #a9a9a9, #696969);
+  filter: blur(10rem);
+  background: radial-gradient(circle 400px at center, #00b4d8, #7209b7, #560bad);
 }
 
 .resume-button:hover {

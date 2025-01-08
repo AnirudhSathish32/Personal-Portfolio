@@ -1,4 +1,3 @@
-
 import github from "../assets/Orion_github.svg"
 import Linkedin from"../assets/linkedin-svgrepo-com.svg"
 import Resume from "../assets/Anirudh Resume (Latex).pdf"
@@ -17,7 +16,7 @@ const OpeningPageButtons: React.FC = () => {
                     link.download = "Anirudh_Sathish_Resume"
                     link.click();
                 }}
-                className="resume-button flex items-center space-x-1 text-sm"
+                className="resume-button flex items-center space-x-1 text-sm hover:scale-110 transition-transform duration-300"
             >
                 <img
                     src={doc}
@@ -31,7 +30,7 @@ const OpeningPageButtons: React.FC = () => {
                 href="https://github.com/AnirudhSathish32"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex"
+                className="flex hover:scale-110 transition-transform duration-300"
             >
                 <img
                     src={github}
@@ -44,7 +43,7 @@ const OpeningPageButtons: React.FC = () => {
                 href="https://www.linkedin.com/in/anirudh-sathish-386389270/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex"
+                className="flex hover:scale-110 transition-transform duration-300"
             >
                 <img
                     src={Linkedin}
@@ -54,12 +53,12 @@ const OpeningPageButtons: React.FC = () => {
             </a>
             <a
                 href="malto:anirudhsat8@gmail.com"
-                className="flex"
+                className="flex hover:scale-105 transition-transform duration-300"
             >
                 <img
                     src={mail}
                     alt="email icon"
-                    className="w-10 h-13 relative right-7 top-1"
+                    className="w-10 h-13 relative right-7 top-0.5"
                 />
             </a>
         </div>
