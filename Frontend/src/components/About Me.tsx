@@ -28,7 +28,7 @@ const AboutMe: React.FC = () => {
     }, []);
 
     return (
-        <section className="relative h-screen w-screen flex justify-center items-center">
+        <section id="About-Me" className="relative h-screen w-screen flex justify-center items-center">
             <div className="relative z-10 flex justify-center items-center h-full">
                 <h1 className="text-center"> Hi I am {name}</h1>
                 <p>{description}</p>

@@ -26,6 +26,7 @@ const Projects = () => {
         <div>
             {projects.map((project, index) => (
                 <section
+                    id="Projects"
                     key={project._id}
                     className="h-screen flex flex-col justify-center items-center bg-gray-900 text-white"
                 >

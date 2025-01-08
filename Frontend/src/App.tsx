@@ -13,6 +13,7 @@ function App() {
   <main>
     <div className = "App">
       <OpeningScreen></OpeningScreen>
+      <Technologies></Technologies>
       <AboutMe></AboutMe>
       <Projects></Projects>
     </div>
