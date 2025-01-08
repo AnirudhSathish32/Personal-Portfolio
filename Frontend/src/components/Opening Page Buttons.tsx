@@ -52,7 +52,7 @@ const OpeningPageButtons: React.FC = () => {
                 />
             </a>
             <a
-                href="malto:anirudhsat8@gmail.com"
+                href="mailto:anirudhsat8@gmail.com"
                 className="flex hover:scale-105 transition-transform duration-300"
             >
                 <img
