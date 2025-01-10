@@ -41,19 +41,19 @@ body {
 
 h1 {
   display: block;
-  font-size: clamp(8rem, 5vw, 13rem);
+  font-size: clamp(5rem, 5vw, 13rem);
   line-height: 1.1;
   font-family: raleway, serif;
 }
 
 h2 {
   display: block;
-  font-size: clamp(1.5rem, 1vw, 3rem);
+  font-size: clamp(1.08rem, 1vw, 2rem);
 }
 
 .h2custom {
   display: block;
-  font-size: clamp(1.2rem, 1vw, 3rem);
+  font-size: clamp(0.8rem, 1vw, 2rem);
 }
 
 p {
@@ -79,7 +79,7 @@ button {
   border-radius: 0.5rem;
   background-color: #333333;
   border: 0.4rem white;
-  padding:0.8rem 1.5rem;
+  padding:0.2rem 1.0rem;
   color: white;
 }
 

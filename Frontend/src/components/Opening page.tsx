@@ -60,7 +60,7 @@ const OpeningScreen: React.FC = () => {
                             <svg
                                 className="absolute bottom-0 left-0 text-blue-500"
                                 width="100%"
-                                height="20"
+                                height="15"
                                 viewBox="0 0 200 20"
                                 xlmns="http://www.w3.org/2000/svg"
                                 preserveAspectRatio="none"
@@ -71,11 +71,11 @@ const OpeningScreen: React.FC = () => {
                                 />
                             </svg>
                         </h1>
-                        <div className="flex items-center space-x-1 relative top-1.5 font-bold font-raleway text-gray-500">
+                        <div className="flex items-center space-x-1 relative top-1 font-bold font-raleway text-gray-500">
                             <h2>Software Engineer ⋅ </h2>
                             <h2>Master of Computer Science</h2>
                             <h2>- Georgia Tech</h2>
-                            <img src={bee} className="h-10 w-10 hover:animate-spin"/>
+                            <img src={bee} className="h-7 w-7 hover:animate-spin"/>
                         </div>
                     </div>
                     {/* Buttons */}
@@ -94,7 +94,7 @@ const OpeningScreen: React.FC = () => {
                         src={downArrow}
                         className="absolute opacity-100 group-hover:opacity-0 animate-bounce transition-all duration-300"
                     />
-                    <span className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap text-md">
+                    <span className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap text-sm">
                     Learn More
                     </span>
                 </button>

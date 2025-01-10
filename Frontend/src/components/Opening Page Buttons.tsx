@@ -7,7 +7,7 @@ import React from 'react';
 
 const OpeningPageButtons: React.FC = () => {
     return (
-        <div className="flex space-x-4 justify-center items-center mt-4 relative top-1.5">
+        <div className="flex space-x-3 justify-center items-center mt-4 relative">
             {/* Resume Button */}
             <button
                 onClick={() => {
@@ -21,9 +21,9 @@ const OpeningPageButtons: React.FC = () => {
                 <img
                     src={doc}
                     alt="document"
-                    className="relative w-7 h-7 right-0.5"
+                    className="relative w-5 h-5"
                 />
-                <span className="text-xl">Resume</span>
+                <span className="text-md">Resume</span>
             </button>
             {/* Github Logo */}
             <a
@@ -35,7 +35,7 @@ const OpeningPageButtons: React.FC = () => {
                 <img
                     src={github}
                     alt="Github"
-                    className="w-10 h-10"
+                    className="w-7 h-7"
                 />
             </a>
             {/* Linkedin Logo */}
@@ -48,7 +48,7 @@ const OpeningPageButtons: React.FC = () => {
                 <img
                     src={Linkedin}
                     alt="Linkedin"
-                    className="w-10 h-10 relative right-0.5"
+                    className="w-7 h-7 relative right-0.5"
                 />
             </a>
             <a
@@ -58,7 +58,7 @@ const OpeningPageButtons: React.FC = () => {
                 <img
                     src={mail}
                     alt="email icon"
-                    className="w-12 h-13 relative right-2.5 top-0.5 ml-1"
+                    className="w-8 h-9 relative right-2.5 top-0.5 ml-1"
                 />
             </a>
         </div>
