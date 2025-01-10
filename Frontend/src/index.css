@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,8 +41,19 @@ body {
 
 h1 {
   display: block;
-  font-size: clamp(3rem, 4vw, 4.5rem);
+  font-size: clamp(8rem, 5vw, 13rem);
   line-height: 1.1;
+  font-family: raleway, serif;
+}
+
+h2 {
+  display: block;
+  font-size: clamp(1.5rem, 1vw, 3rem);
+}
+
+.h2custom {
+  display: block;
+  font-size: clamp(1.2rem, 1vw, 3rem);
 }
 
 p {
@@ -50,7 +63,7 @@ p {
 }
 
 button {
-  border-radius: 8rem;
+  border-radius: 0;
   border: 2rem solid transparent;
   padding: 0.2rem 1.2rem;
   font-size: 1rem;
@@ -59,14 +72,15 @@ button {
   background-color: transparent;
   cursor: pointer;
   transition: border-color 0.25s;
+
 }
 
 .resume-button {
-  border-radius: 1rem;
-  background-color: white;
-  border: 0.1rem solid white;
-  padding:0.3rem 0.5rem;
-  color: black;
+  border-radius: 0.5rem;
+  background-color: #333333;
+  border: 0.4rem white;
+  padding:0.8rem 1.5rem;
+  color: white;
 }
 
 button:hover {
@@ -82,6 +96,12 @@ button:hover {
   filter: blur(10rem);
   background: radial-gradient(circle 400px at center, #00b4d8, #7209b7, #560bad);
 }
+
+.radial-gradient2 {
+  filter: blur(100rem);
+  background: radial-gradient(circle 400px at center, #333333, dimgray);
+}
+
 
 .resume-button:hover {
   border-color: white;
