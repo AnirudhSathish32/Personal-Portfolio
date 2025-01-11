@@ -1,8 +1,8 @@
-import github from "../assets/Orion_github.svg"
-import Linkedin from"../assets/linkedin-svgrepo-com.svg"
-import Resume from "../assets/Anirudh Resume (Latex).pdf"
-import doc from "../assets/document-pdf-svgrepo-com.svg"
-import mail from "../assets/mail-svgrepo-com.svg"
+import github from "../assets/opening_page/Orion_github.svg"
+import Linkedin from"../assets/opening_page/linkedin-svgrepo-com.svg"
+import Resume from "../assets/opening_page/Anirudh Resume (Latex).pdf"
+import doc from "../assets/opening_page/document-pdf-svgrepo-com.svg"
+import mail from "../assets/opening_page/mail-svgrepo-com.svg"
 import React from 'react';
 
 const OpeningPageButtons: React.FC = () => {

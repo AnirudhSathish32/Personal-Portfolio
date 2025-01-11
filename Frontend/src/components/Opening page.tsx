@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import spaceImage from "../assets/space.jpg"
-import downArrow from "../assets/down-arrow-svgrepo-com.svg"
+import downArrow from "../assets/opening_page/down-arrow-svgrepo-com.svg"
+import locationPin from "../assets/opening_page/location-pin-svgrepo-com.svg"
+import flag from "../assets/opening_page/united-states-svgrepo-com.svg"
+import bee from "../assets/opening_page/bee-removebg-preview.png"
 import OpeningPageButtons from "./Opening Page Buttons.tsx";
-import locationPin from "../assets/location-pin-svgrepo-com.svg"
-import flag from "../assets/united-states-svgrepo-com.svg"
-import bee from "../assets/bee-removebg-preview.png"
+
 const OpeningScreen: React.FC = () => {
     const [name, setName] = useState<string>("");
 
@@ -13,7 +13,6 @@ const OpeningScreen: React.FC = () => {
             try {
                 const response = await fetch("/api/anirudh");
                 const data = await response.json();
-
                 if (data.success) {
                     // Extract name and description from the first record (or adjust as needed)
                     if (data.data.length > 0) {
@@ -36,12 +35,6 @@ const OpeningScreen: React.FC = () => {
             style={{minWidth: '100%'}}>
             {/* background */}
             <div className="absolute inset-0 bg-[linear-gradient(0deg,_rgba(255,255,255,0.3)_0.5px,_transparent_1px),_linear-gradient(90deg,_rgba(255,255,255,0.3)_0.5px,_transparent_1px)] bg-[length:50px_50px]"></div>
-
-            {/* <img
-                src={spaceImage}
-                alt="space background"
-                className="absolute inset-0 w-full h-full object-cover"/> */}
-
             {/* semi-Transparent overlay */}
             <div className="absolute inset-0 bg-black bg-opacity-90"></div>
             {/* Foreground */}
