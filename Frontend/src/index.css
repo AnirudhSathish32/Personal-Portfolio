@@ -39,23 +39,6 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
-  display: block;
-  font-size: clamp(5rem, 5vw, 13rem);
-  line-height: 1.1;
-  font-family: raleway, serif;
-}
-
-h2 {
-  display: block;
-  font-size: clamp(1.08rem, 1vw, 2rem);
-}
-
-.h2custom {
-  display: block;
-  font-size: clamp(0.8rem, 1vw, 2rem);
-}
-
 p {
   display: block;
   font-size: clamp(0.75rem, 2vw, 2.5rem);
@@ -83,29 +66,11 @@ button {
   color: white;
 }
 
-button:hover {
-  border-color: transparent
-}
-
-.glow-effect {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
-               0 0 20px rgba(255, 255, 255, 0.6),
-               0 0 40px rgba(0, 123, 255, 0.8);
-}
 .radial-gradient {
-  filter: blur(10rem);
-  background: radial-gradient(circle 400px at center, #00b4d8, #7209b7, #560bad);
-}
-
-.radial-gradient2 {
   filter: blur(100rem);
   background: radial-gradient(circle 400px at center, #333333, dimgray);
 }
 
-
-.resume-button:hover {
-  border-color: white;
-}
 
 
 @media (prefers-color-scheme: light) {

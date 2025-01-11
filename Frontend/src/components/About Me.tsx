@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 const AboutMe: React.FC = () => {
     const [description, setDescription] = useState<string>("");
-    const [name, setName] = useState<string>("");
 
     useEffect(() => {
         const fetchData = async () => {
@@ -14,7 +13,6 @@ const AboutMe: React.FC = () => {
                     // Extract description from the first record (or adjust as needed)
                     if (data.data.length > 0) {
                         setDescription(data.data[0].description);
-                        setName(data.data[0].name);
                     }
                 } else {
                     console.error("Failed to fetch records:", data.message);
@@ -32,6 +30,7 @@ const AboutMe: React.FC = () => {
                 <h1 className="m-0">About Me</h1>
                 <p>{description}</p>
             </div>
+
         </section>
     );
 };

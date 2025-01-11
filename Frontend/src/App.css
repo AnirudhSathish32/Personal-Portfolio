@@ -58,34 +58,39 @@ section {
   color: #888;
 }
 
+/* Specific styles for #Opening-Page section*/
+#Opening-Page h1 {
+  display: block;
+  font-size: clamp(5rem, 5vw, 13rem);
+  line-height: 1.1;
+  font-family: raleway, serif;
+}
+
+#Opening-Page h2 {
+  display: block;
+  font-size: clamp(1.08rem, 1vw, 2rem);
+  font-family: raleway, serif;
+}
+
+#Opening-Page h3 {
+  display: block;
+  font-size: clamp(0.9rem, 1vw, 2rem);
+}
+
 /* Specific styles for #About-Me section */
 #About-Me {
   position: relative;
   height: calc(100vh - 4rem);
   text-align: right; /* Ensure text is aligned to the right */
-  /* Add padding around the section */
-  padding: 4rem;
+  padding: 4rem; /* Add padding around the section */
   margin-top: 4rem;
-  scroll-snap-align: start;
   scroll-margin-top: 4rem;
 }
 
-#About-Me .content {
-  position: relative;
-}
 
-#About-Me h2,
-#About-Me p {
-  margin: 0; /* Remove default margins */
-  text-align: right; /* Align text to the right for consistency */
-}
 
-/* Optional: Adjust the font size for h2 and p */
-#About-Me h2 {
-  font-size: 1.5rem; /* Customize the font size */
-}
 
-#About-Me p {
-  font-size: 1rem; /* Customize the font size */
-}
+
+
+
 
