@@ -16,7 +16,7 @@ const OpeningPageButtons: React.FC = () => {
                     link.download = "Anirudh_Sathish_Resume"
                     link.click();
                 }}
-                className="resume-button flex items-center space-x-1 hover:scale-110 transition-transform duration-300 rounded-md"
+                className="resume-button flex items-center space-x-1 hover:scale-110 transition-transform duration-300 rounded-md relative left-0.5"
             >
                 <img
                     src={doc}
