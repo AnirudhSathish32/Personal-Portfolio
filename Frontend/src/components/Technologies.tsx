@@ -1,11 +1,47 @@
 import React, {useEffect, useState} from 'react'
-import {data} from "autoprefixer";
+
 const Technologies = () => {
-    const [framework, setFramework] = useState([])
-    const [db, setDb] = useState([])
-    const [devTool, setDt] = useState([])
     const [lang, setLang] = useState([])
-    const [library, setLibrary] = useState([])
+
+    const manualDetails = {
+        ExpressJS: {
+          logo: "",
+          description: "",
+        },
+        Python: {
+            logo: "",
+            description: "",
+        },
+        HTML: {
+            logo: "",
+            description: "",
+        },
+        CSS: {
+            logo: "",
+            description: "",
+        },
+        Java: {
+            logo: "",
+            description: "",
+        },
+        TypeScript: {
+            logo: "",
+            description: "",
+        },
+        TailwindCSS: {
+            logo: "",
+            description: "",
+        },
+        NodeJS: {
+            logo: "",
+            description: "",
+        },
+        R: {
+            logo: "",
+            description: "",
+        },
+    }
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -14,10 +50,6 @@ const Technologies = () => {
 
                 if (data.success) {
                     setLang(data.data[0].languages);
-                    setLibrary(data.data[0].libraries);
-                    setFramework(data.data[0].frameworks);
-                    setDt(data.data[0].developerTools);
-                    setDb(data.data[0].databases);
                 } else {
                     console.error("Failed to fetch records:", data.message);
                 }
@@ -30,14 +62,11 @@ const Technologies = () => {
     }, []);
 
     return (
-        <h1 className="text-white">
-            {lang.join(",")}
-            {framework.join(",")}
-            {library.join(",")}
-            {devTool.join(",")}
-            {db.join(",")}
-        </h1>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+            lang.join(",")
+        </div>
     );
 };
+
 
 export default Technologies;
