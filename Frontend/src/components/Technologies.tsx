@@ -1,46 +1,7 @@
-import React, {useEffect, useState} from 'react'
-
-const Technologies = () => {
-    const [lang, setLang] = useState([])
-
-    const manualDetails = {
-        ExpressJS: {
-          logo: "",
-          description: "",
-        },
-        Python: {
-            logo: "",
-            description: "",
-        },
-        HTML: {
-            logo: "",
-            description: "",
-        },
-        CSS: {
-            logo: "",
-            description: "",
-        },
-        Java: {
-            logo: "",
-            description: "",
-        },
-        TypeScript: {
-            logo: "",
-            description: "",
-        },
-        TailwindCSS: {
-            logo: "",
-            description: "",
-        },
-        NodeJS: {
-            logo: "",
-            description: "",
-        },
-        R: {
-            logo: "",
-            description: "",
-        },
-    }
+import React, { useEffect, useState } from "react";
+import TechnologiesCards from "./TechnologiesCards.tsx";
+const Technologies: React.FC = () => {
+    const [descriptionShort, setDescriptionShort] = useState<string>("");
 
     useEffect(() => {
         const fetchData = async () => {
@@ -49,7 +10,10 @@ const Technologies = () => {
                 const data = await response.json();
 
                 if (data.success) {
-                    setLang(data.data[0].languages);
+                    // Extract description from the first record (or adjust as needed)
+                    if (data.data.length > 0) {
+                        setDescriptionShort(data.data[0].descriptionShort);
+                    }
                 } else {
                     console.error("Failed to fetch records:", data.message);
                 }
@@ -57,16 +21,20 @@ const Technologies = () => {
                 console.error("Error fetching records:", error);
             }
         };
-
         fetchData();
     }, []);
 
     return (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
-            lang.join(",")
-        </div>
+        <section id="Technologies" className="w-auto h-auto lg:h-screen lg:w-screen flex flex-col relative select-none">
+            <div className="space-y-2 mb-10">
+                <h1>Technologies</h1>
+                <p>{descriptionShort}</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 items-center justify-between gap-4">
+                <TechnologiesCards/>
+            </div>
+        </section>
     );
 };
-
 
 export default Technologies;

@@ -61,7 +61,7 @@ section {
 /* Specific styles for #Opening-Page section*/
 #Opening-Page h1 {
   display: block;
-  font-size: clamp(5rem, 5vw, 13rem);
+  font-size: clamp(5rem, 5vw, 6rem);
   line-height: 1.1;
   font-family: raleway, serif;
 }
@@ -77,14 +77,29 @@ section {
   font-size: clamp(0.9rem, 1vw, 2rem);
 }
 
-/* Specific styles for #About-Me section */
+/* Specific styles for #Technologies section */
+#Technologies {
+  position: relative;
+  height: calc(100vh - 2rem);
+  text-align: left; /* Ensure text is aligned to the right */
+  padding: 2rem; /* Add padding around the section */
+  margin-top: 2rem;
+  scroll-margin-top: 2rem;
+}
+
+#Technologies h1 {
+  display: block;
+  font-family: raleway, serif;
+  font-size: clamp(3rem, 3vw, 4rem);
+}
+
 #About-Me {
   position: relative;
-  height: calc(100vh - 4rem);
-  text-align: right; /* Ensure text is aligned to the right */
-  padding: 4rem; /* Add padding around the section */
-  margin-top: 4rem;
-  scroll-margin-top: 4rem;
+  height: calc(100vh - 2rem);
+  text-align: left; /* Ensure text is aligned to the right */
+  padding: 2rem; /* Add padding around the section */
+  margin-top: 2rem;
+  scroll-margin-top: 2rem;
 }
 
 

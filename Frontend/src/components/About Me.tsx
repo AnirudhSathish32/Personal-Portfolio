@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from 'react';
 
 const AboutMe: React.FC = () => {
-    const [description, setDescription] = useState<string>("");
+    const [descriptionLong, setDescriptionLong] = useState<string>("");
 
     useEffect(() => {
         const fetchData = async () => {
@@ -12,7 +12,7 @@ const AboutMe: React.FC = () => {
                 if (data.success) {
                     // Extract description from the first record (or adjust as needed)
                     if (data.data.length > 0) {
-                        setDescription(data.data[0].description);
+                        setDescriptionLong(data.data[0].descriptionLong);
                     }
                 } else {
                     console.error("Failed to fetch records:", data.message);
@@ -25,14 +25,13 @@ const AboutMe: React.FC = () => {
     }, []);
 
     return (
-        <section id="About-Me" className="h-screen w-screen flex">
-            <div className="absolute top-0 text-left">
-                <h1 className="m-0">About Me</h1>
-                <p>{description}</p>
+        <section id="About-Me" className="h-screen w-screen">
+            <div className="text-xl font-bold text-left flex flex-col">
+                <h1>About Me</h1>
+                <p>{descriptionLong}</p>
             </div>
-
         </section>
-    );
-};
+    )
+}
 
 export default AboutMe;

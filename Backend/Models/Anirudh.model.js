@@ -3,11 +3,15 @@ import mongoose from "mongoose";
 const anirudhSchema = new mongoose.Schema ({
     name: {
         type: String,
-        required:true
+        required: true
     },
-    description: {
+    descriptionShort: {
         type: String,
-        required:true
+        required: true
+    },
+    descriptionLong: {
+      type: String,
+      required: true
     },
     frameworks: {
         type: Array,
