@@ -24,11 +24,22 @@ const AboutMe: React.FC = () => {
         fetchData();
     }, []);
 
+    const textParts = descriptionLong.split("\n\n")
+    const part1 = textParts[0];
+    const part2 = textParts[1];
+    const part3 = textParts[2];
+    const part4 = textParts[3];
+
     return (
         <section id="About-Me" className="h-screen w-screen">
-            <div className="text-xl font-bold text-left flex flex-col">
-                <h1>About Me</h1>
-                <p>{descriptionLong}</p>
+            <div className="text-left flex flex-col">
+                <h1 className="font-bold pb-3">About Me</h1>
+                <div className="max-w-screen-md">
+                    <p className="text-base font-bold pb-2">{part1}</p>
+                    <hr className="border-t-4 border-blue-500 my-4 w-1/2"/>
+                    <p className="text-base">{part2} {part3}</p>
+                    <p className="text-base py-4">{part4}</p>
+                </div>
             </div>
         </section>
     )

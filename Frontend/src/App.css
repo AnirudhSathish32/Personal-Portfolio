@@ -102,7 +102,11 @@ section {
   scroll-margin-top: 2rem;
 }
 
-
+#About-Me h1 {
+  display: block;
+  font-family: raleway, serif;
+  font-size: clamp(3rem, 3vw, 4rem);
+}
 
 
 
