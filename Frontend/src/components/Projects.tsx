@@ -31,7 +31,6 @@ const Projects = () => {
                     className="h-screen flex flex-col justify-center items-center bg-gray-900 text-white"
                 >
                     <div className="text-center">
-                        <h1>Projects</h1>
                         <h1 className="text-4xl font-bold">{project.name}</h1>
                         <p className="text-lg mt-4">{project.description}</p>
                         <div className="mt-4 text-sm italic text-gray-400">
