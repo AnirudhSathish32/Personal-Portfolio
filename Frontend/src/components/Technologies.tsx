@@ -26,10 +26,11 @@ const Technologies: React.FC = () => {
 
     return (
         <section id="Technologies" className="w-auto h-auto lg:h-screen lg:w-screen flex flex-col relative select-none">
-            <div className="space-y-2 mb-10">
+            <div className="space-y-2">
                 <h1>Technologies</h1>
-                <p>{descriptionShort}</p>
+                <p className="text-lg">{descriptionShort}</p>
             </div>
+            <hr className="border-t-4 border-blue-500 w-1/5 mb-10 mt-8"/>
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 items-center justify-between gap-4">
                 <TechnologiesCards/>
             </div>
