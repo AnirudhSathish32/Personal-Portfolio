@@ -5,7 +5,7 @@ const Navbar = () => {
         <header className="py-8 xl:py-12 text-white">
             <div className="container mx-auto"> navbar
                 <Link>
-                    {/* random testing */}
+                    {/* random test */}
                 </Link>
             </div>
         </header>
