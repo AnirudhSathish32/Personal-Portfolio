@@ -30,7 +30,7 @@ const Technologies: React.FC = () => {
                 <h1>Technologies</h1>
                 <p className="text-lg">{descriptionShort}</p>
             </div>
-            <hr className="border-t-4 border-blue-500 w-1/5 mb-10 mt-8"/>
+            <hr className="border-t-4 border-blue-500 w-1/4 mb-10 mt-8"/>
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 items-center justify-between gap-4">
                 <TechnologiesCards/>
             </div>

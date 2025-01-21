@@ -8,6 +8,7 @@ import typescript from "../assets/about_me/typescript-official-svgrepo-com.svg"
 import expressjs from "../assets/about_me/express-svgrepo-com.svg"
 import reactlogo from "../assets/about_me/react-svgrepo-com.svg"
 import nodejs from "../assets/about_me/nodejs-icon-svgrepo-com.svg"
+import php from "../assets/about_me/php-svgrepo-com.svg"
 
 import React, {useEffect, useState} from 'react'
 
@@ -42,7 +43,7 @@ const TechnologiesCards = () => {
         },
         {
             name: 'React',
-            logo: {reactlogo},
+            logo: reactlogo,
             description: "JavaScript UI Library",
         },
         {
@@ -64,6 +65,11 @@ const TechnologiesCards = () => {
             name: 'ExpressJS',
             logo: expressjs,
             description: "Web Framework",
+        },
+        {
+            name: "PHP",
+            logo: php,
+            description: "Web Scripting"
         },
     ];
 
@@ -93,7 +99,7 @@ const TechnologiesCards = () => {
             {manualDetails.map((lang) => (
                 <div
                     key={lang.name}
-                    className="flex flex-1 gap-5 p-2.5 rounded-xl border text-xs"
+                    className="flex flex-1 gap-5 p-2.5 bg-gray-800 rounded-xl text-xs shadow-lg transition-transform transform hover:scale-110 hover:shadow-xl"
                     >
                     <div className="p-3 rounded-lg w-fit">
                         <img

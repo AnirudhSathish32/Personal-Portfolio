@@ -108,6 +108,21 @@ section {
   font-size: clamp(3rem, 3vw, 4rem);
 }
 
+#Projects {
+  position: relative;
+  height: fit-content;
+  text-align: left; /* Ensure text is aligned to the right */
+  padding: 2rem; /* Add padding around the section */
+  margin-top: 2rem;
+  scroll-margin-top: 2rem;
+}
+
+#Projects h1 {
+  display: block;
+  font-family: raleway, serif;
+  font-size: clamp(3rem, 3vw, 4rem);
+}
+
 
 
 
