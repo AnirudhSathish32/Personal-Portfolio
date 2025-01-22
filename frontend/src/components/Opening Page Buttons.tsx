@@ -1,6 +1,6 @@
 import github from "../assets/opening_page/Orion_github.svg"
 import Linkedin from"../assets/opening_page/linkedin-svgrepo-com.svg"
-import Resume from "../assets/opening_page/Anirudh Resume (Latex).pdf"
+import Resume from "../assets/opening_page/Anirudh_Sathish_Resume.pdf"
 import doc from "../assets/opening_page/document-pdf-svgrepo-com.svg"
 import mail from "../assets/opening_page/mail-svgrepo-com.svg"
 import React from 'react';
