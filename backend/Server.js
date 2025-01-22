@@ -16,6 +16,8 @@ app.use(express.json());
 app.use("/api/projects", projectsRoute);
 app.use("/api/anirudh", anirudhRoute);
 
+{/* combine the front and backend */}
+
 const __dirname = path.resolve();
 
 if(process.env.NODE_ENV === "production") {
