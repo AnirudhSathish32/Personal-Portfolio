@@ -1,5 +1,4 @@
 import './App.css'
-import Navbar from "./components/Navbar.tsx"
 import OpeningScreen from "./components/Opening page.tsx";
 import Technologies from "./components/Technologies.tsx";
 import Projects from "./components/Projects.tsx";

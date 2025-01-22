@@ -1,7 +1,14 @@
-import React, {useEffect, useState} from 'react'
+import {useEffect, useState} from 'react'
+
+interface Project {
+    _id: string;
+    name: string;
+    description: string;
+    technologies: string[];
+}
 
 const Projects = () => {
-    const [projects, setProjects] = useState([]);
+    const [projects, setProjects] = useState<Project[]>([]);
 
     useEffect(() => {
         const fetchData = async () => {

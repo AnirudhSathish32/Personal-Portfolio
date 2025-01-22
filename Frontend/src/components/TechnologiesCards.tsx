@@ -10,10 +10,7 @@ import reactlogo from "../assets/about_me/react-svgrepo-com.svg"
 import nodejs from "../assets/about_me/nodejs-icon-svgrepo-com.svg"
 import php from "../assets/about_me/php-svgrepo-com.svg"
 
-import React, {useEffect, useState} from 'react'
-
 const TechnologiesCards = () => {
-    const [lang, setLang] = useState([])
 
     const manualDetails = [
         {
@@ -72,27 +69,6 @@ const TechnologiesCards = () => {
             description: "Web Scripting"
         },
     ];
-
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch("/api/anirudh");
-                const data = await response.json();
-
-                if (data.success) {
-                    setLang(data.data[0].languages);
-                } else {
-                    console.error("Failed to fetch records:", data.message);
-                }
-            } catch (error) {
-                console.error("Error fetching records:", error);
-            }
-        };
-
-        fetchData();
-    }, []);
-
 
     return (
         <>
